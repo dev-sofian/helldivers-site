@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "GalacticFont";
+    src: local("Swiss 721 Extended Bold"), url("fonts/Swiss-721-Extended-Bold.woff2") format("woff2"), url("fonts/Swiss-721-Extended-Bold.woff") format("woff"), url("fonts/Swiss-721-Extended-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "GalacticFont", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2%;
+}
+
+h1 {
+    color: #f8e003;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+h2 {
+    color: #f8e003;
+    margin-bottom: 2%;
+}
+
+h3 {
+    margin-bottom: 1%;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.little-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+}
+
+.color-specific {
+    color: #f8e003;
+}
+
+.csTerminids {
+    color: #ffc100;
+}
+
+.csAutomatons {
+    color: #fe6d72;
+}
+
+.csIlluminates {
+    color: #6b3aba;
+}
+
+li {
+    margin-bottom: .5%;
+}
+
+img {
+    margin-bottom: .5%;
+}
+
+.enlist-link {
+    text-align: center;
+    color: #6ecffc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.video-link {
+    color: #6ecffc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.conditions {
+    margin-top: 2%;
+    font-size: 0.7rem;
+}
+
+.Screenshot {
+    display: block;
+    margin-left: left;
+    margin-right: auto;
+    width: 35%;
+    margin-bottom: 2%;
+}
+
+.Map {
+    display: block;
+    margin-left: left;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.large-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+
+/* Target table with all three classes */
+
+table.wikitable.sortable.jquery-tablesorter {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #000000;
+}
+
+
+/* Table header cells */
+
+table.wikitable.sortable.jquery-tablesorter th {
+    background-color: #000000;
+    border: 1px solid #f8e003;
+    padding: 8px;
+    text-align: left;
+    cursor: pointer;
+    /* Indicates sortable columns */
+}
+
+
+/* Table body cells */
+
+table.wikitable.sortable.jquery-tablesorter td {
+    border: 1px solid #f8e003;
+    padding: 8px;
+}
+
+
+/* Zebra striping for rows */
+
+table.wikitable.sortable.jquery-tablesorter tr:nth-child(even) {
+    background-color: #000000;
+}
+
+
+/* Hover effect */
+
+table.wikitable.sortable.jquery-tablesorter tr:hover {
+    background-color: #000000;
+}
