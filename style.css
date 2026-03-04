@@ -1,9 +1,6 @@
 @font-face {
     font-family: "GalacticFont";
-    src: local("Swiss 721 Extended Bold"),
-         url("fonts/Swiss-721-Extended-Bold.woff2") format("woff2"),
-         url("fonts/Swiss-721-Extended-Bold.woff") format("woff"),
-         url("fonts/Swiss-721-Extended-Bold.otf") format("opentype");
+    src: local("Swiss 721 Extended Bold"), url("fonts/Swiss-721-Extended-Bold.woff2") format("woff2"), url("fonts/Swiss-721-Extended-Bold.woff") format("woff"), url("fonts/Swiss-721-Extended-Bold.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -41,13 +38,7 @@ body {
     position: fixed;
     inset: 0;
     z-index: 9999;
-    background: repeating-linear-gradient(
-        to bottom,
-        transparent,
-        transparent 2px,
-        rgba(0,0,0,.12) 2px,
-        rgba(0,0,0,.12) 4px
-    );
+    background: repeating-linear-gradient( to bottom, transparent, transparent 2px, rgba(0, 0, 0, .12) 2px, rgba(0, 0, 0, .12) 4px);
 }
 
 .grain {
@@ -63,18 +54,28 @@ body {
 }
 
 @keyframes grain-move {
-    0%   { transform: translate(0, 0); }
-    25%  { transform: translate(-2%, -1%); }
-    50%  { transform: translate(1%, 2%); }
-    75%  { transform: translate(-1%, 1%); }
-    100% { transform: translate(2%, -2%); }
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-2%, -1%);
+    }
+    50% {
+        transform: translate(1%, 2%);
+    }
+    75% {
+        transform: translate(-1%, 1%);
+    }
+    100% {
+        transform: translate(2%, -2%);
+    }
 }
 
 .topbar {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(0,0,0,.95);
+    background: rgba(0, 0, 0, .95);
     border-bottom: 2px solid var(--jaune);
     backdrop-filter: blur(8px);
 }
@@ -126,9 +127,7 @@ body {
 .hero-bg-grid {
     position: absolute;
     inset: 0;
-    background-image:
-        linear-gradient(rgba(248,224,3,.06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(248,224,3,.06) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(248, 224, 3, .06) 1px, transparent 1px), linear-gradient(90deg, rgba(248, 224, 3, .06) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
 }
@@ -149,8 +148,13 @@ body {
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50%       { opacity: .3; }
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .3;
+    }
 }
 
 .hero-title {
@@ -158,7 +162,7 @@ body {
     color: var(--jaune);
     line-height: .95;
     letter-spacing: 4px;
-    text-shadow: 0 0 60px rgba(248,224,3,.3), 4px 4px 0 rgba(248,224,3,.15);
+    text-shadow: 0 0 60px rgba(248, 224, 3, .3), 4px 4px 0 rgba(248, 224, 3, .15);
     margin-bottom: 1.5rem;
 }
 
@@ -241,8 +245,12 @@ body {
 }
 
 @keyframes ticker {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .screenshots-section {
@@ -283,9 +291,9 @@ section {
     padding: 5rem 0;
 }
 
-.map-section > *,
-.enlist-section > *,
-.media-section > * {
+.map-section>*,
+.enlist-section>*,
+.media-section>* {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -350,15 +358,37 @@ section {
     transition: opacity .3s;
 }
 
-.enemy-card.terminid::before { background: radial-gradient(ellipse at top left, rgba(255,193,0,.06), transparent 60%); }
-.enemy-card.automaton::before { background: radial-gradient(ellipse at top left, rgba(254,109,114,.06), transparent 60%); }
-.enemy-card.illuminate::before { background: radial-gradient(ellipse at top left, rgba(139,92,246,.06), transparent 60%); }
+.enemy-card.terminid::before {
+    background: radial-gradient(ellipse at top left, rgba(255, 193, 0, .06), transparent 60%);
+}
 
-.enemy-card:hover { transform: translateY(-4px); }
-.enemy-card.terminid:hover  { border-color: var(--terminid); }
-.enemy-card.automaton:hover { border-color: var(--automaton); }
-.enemy-card.illuminate:hover{ border-color: var(--illuminate); }
-.enemy-card:hover::before   { opacity: 1; }
+.enemy-card.automaton::before {
+    background: radial-gradient(ellipse at top left, rgba(254, 109, 114, .06), transparent 60%);
+}
+
+.enemy-card.illuminate::before {
+    background: radial-gradient(ellipse at top left, rgba(139, 92, 246, .06), transparent 60%);
+}
+
+.enemy-card:hover {
+    transform: translateY(-4px);
+}
+
+.enemy-card.terminid:hover {
+    border-color: var(--terminid);
+}
+
+.enemy-card.automaton:hover {
+    border-color: var(--automaton);
+}
+
+.enemy-card.illuminate:hover {
+    border-color: var(--illuminate);
+}
+
+.enemy-card:hover::before {
+    opacity: 1;
+}
 
 .enemy-header {
     display: flex;
@@ -401,7 +431,9 @@ section {
     transition: opacity .2s;
 }
 
-.enemy-link:hover { opacity: .7; }
+.enemy-link:hover {
+    opacity: .7;
+}
 
 .media-grid {
     display: flex;
@@ -447,7 +479,9 @@ section {
     transition: opacity .2s;
 }
 
-.video-link:hover { opacity: .7; }
+.video-link:hover {
+    opacity: .7;
+}
 
 .map-wrapper {
     max-width: 1200px;
@@ -552,7 +586,9 @@ section {
     transition: opacity .2s;
 }
 
-.steam-link:hover { opacity: .7; }
+.steam-link:hover {
+    opacity: .7;
+}
 
 .conditions {
     font-size: .6rem;
@@ -589,7 +625,18 @@ section {
     color: #222 !important;
 }
 
-.color-specific { color: var(--jaune); }
-.csTerminids   { color: var(--terminid); }
-.csAutomatons  { color: var(--automaton); }
-.csIlluminates { color: var(--illuminate); }
+.color-specific {
+    color: var(--jaune);
+}
+
+.csTerminids {
+    color: var(--terminid);
+}
+
+.csAutomatons {
+    color: var(--automaton);
+}
+
+.csIlluminates {
+    color: var(--illuminate);
+}

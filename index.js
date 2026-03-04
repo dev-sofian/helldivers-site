@@ -1,4 +1,4 @@
-document.getElementById("enlistForm").addEventListener("submit", function (e) {
+document.getElementById("enlistForm").addEventListener("submit", function(e) {
     e.preventDefault();
     const nom = document.getElementById("nom").value.trim();
     const cause = document.getElementById("cause").value.trim();

@@ -1,5 +1,4 @@
-const units = [
-    {
+const units = [{
         icon: "Factory_Strider_Enemy_Icon.png",
         nom: "FACTORY STRIDER",
         desc: "Massive Automaton quad-walker armed with twin fusion gatling guns and a large burst-cannon. Capable of deploying squads of Devastators directly onto the battlefield."
