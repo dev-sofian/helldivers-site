@@ -1,95 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Galactic War - HD2</title>
-
-
+    <title>Galactic War — HELLDIVERS 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-    <header>
-        <img src="Helldivers2Logo.png" alt="HD2Logo" class="logo">
-    </header>
+<div class="scanlines"></div>
+<div class="grain"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-    <!--audio controls>
-        <source src="audio-file.mp3" type="audio/mpeg">
-        <source src="audio-file.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <hr>
-
-    <audio autoplay loop>
-        <source src="background-music.mp3" type="audio/mpeg">
-        <source src="background-music.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-    </audio-->
-
-    <h1>-- WELCOME TO THE GALACTIC WAR CAMPAIGN --</h1>
-
-    <img src="image1.png" alt="Screenshot1" class="Screenshot" />
-    <img src="image2.png" alt="Screenshot2" class="Screenshot" />
-    <img src="image3.jpg" alt="Screenshot3" class="Screenshot" />
-
-    <h2>INTRODUCTION : </h2>
-
-    <div class="spinner-border text-warning" role="status">
-        <span class="visually-hidden">Loading...</span>
+<nav class="topbar">
+    <div class="topbar-inner">
+        <img src="Helldivers2Logo.png" alt="HD2 Logo" class="topbar-logo">
+        <ul class="topbar-links">
+            <li><a href="index.html" class="active">WAR CAMPAIGN</a></li>
+            <li><a href="automaton.html" class="csAutomatons">AUTOMATONS</a></li>
+            <li><a href="#enlist">ENLIST</a></li>
+        </ul>
     </div>
+</nav>
 
-    <h3>THE DEMOCRATIC FREEDOM OF <span class="color-specific">SUPER-EARTH</span> HAS BEEN ATTACKED BY THREE ENEMY ENCAMPMENTS : </h3>
+<section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-inner">
+        <p class="hero-classified">⚠ CLASSIFIED TRANSMISSION — SUPER EARTH HIGH COMMAND ⚠</p>
+        <h1 class="hero-title">GALACTIC WAR<br><span>CAMPAIGN</span></h1>
+        <p class="hero-sub">Democracy is under attack. The galaxy needs YOU.</p>
+        <div class="hero-actions">
+            <button class="btn-war" onclick="window.location.href='steam://run/553850'">▶ PLAY NOW</button>
+            <a href="#enlist" class="btn-outline">ENLIST TODAY</a>
+        </div>
+    </div>
+    <div class="hero-ticker">
+        <span>BREAKING: AUTOMATON FORCES ADVANCING ON SECTOR 7 &nbsp;•&nbsp; TERMINID HIVE COUNT REACHES NEW HIGH &nbsp;•&nbsp; ILLUMINATE AGENTS SPOTTED IN OUTER COLONIES &nbsp;•&nbsp; HELLDIVERS REQUESTED IMMEDIATELY &nbsp;•&nbsp;</span>
+        <span aria-hidden="true">BREAKING: AUTOMATON FORCES ADVANCING ON SECTOR 7 &nbsp;•&nbsp; TERMINID HIVE COUNT REACHES NEW HIGH &nbsp;•&nbsp; ILLUMINATE AGENTS SPOTTED IN OUTER COLONIES &nbsp;•&nbsp; HELLDIVERS REQUESTED IMMEDIATELY &nbsp;•&nbsp;</span>
+    </div>
+</section>
 
-    <ul>
-        <li> THE <span class="csTerminids"><a href="" class="csTerminids">TERMINIDS</a></span> : A RACE OF INSECTOID CREATURES WHICH HAVE WON THE EVOLUTION GAME.</li>
-        <img src="TerminidLogo.png" alt="TLogo" class="little-logo">
-        <li> THE <span class="csAutomatons"><a href="automaton.html" class="csAutomatons">AUTOMATONS</a></span> : THEIR BASE IS LOCATED IN CYBERSTAN AND THEY ARE USING THE CYBORG TECHNOLOGY TO SPREAD TERROR.</li>
-        <img src="AutomatonLogo.png" alt="ALogo" class="little-logo">
-        <li> THE <span class="csIlluminates"><a href="" class="csIlluminates">ILLUMINATES</a></span> : A MYSTERIOUS CULT WITH ONLY ONE IDEOLOGY : TAKE CONTROL OF EVERY HUMAN IN THE GALAXY.</li>
-        <img src="IlluminateLogo.png" alt="ILogo" class="little-logo">
-    </ul>
+<section class="screenshots-section">
+    <div class="screenshots-inner">
+        <img src="image1.png" alt="Screenshot 1" class="screenshot">
+        <img src="image2.png" alt="Screenshot 2" class="screenshot">
+        <img src="image3.jpg" alt="Screenshot 3" class="screenshot">
+    </div>
+</section>
 
-    <h2>IN THIS VIDEO, YOU WILL KNOW EVERYTHING ABOUT OUR GOAL !</h2>
-    <a href="https://youtu.be/S9STizATKjE?si=-yD0uu6U7fRKL9Zy" class="video-link">CLICK HERE TO WATCH THE CINEMATOGRAPHIC INTRODUCTION !</a>
+<section class="intro-section">
+    <div class="section-label">INTELLIGENCE REPORT</div>
+    <h2 class="section-title">THREE THREATS TO DEMOCRACY</h2>
+    <p class="intro-lead">The democratic freedom of <span class="color-specific">SUPER EARTH</span> has been attacked by three enemy encampments. Helldivers are deployed to neutralize all threats — by any means necessary.</p>
 
-    <h2>BREAKING NEWS !</h2>
-    <a href="https://youtu.be/3_ZVYxDgbM0?si=q-QC3CoHxgBFORjQ" class="video-link"><span class="csAutomatons">AUTOMATONS</span> ARE A REAL THREAT !</a>
-    <br>
-    <iframe src="https://hd2galaxy.com/" title="HD2Galaxy" width="800" height="600" style="border:none;">
-    </iframe>
+    <div class="enemies-grid">
 
-    <h1>PLAY NOW !</h1>
+        <div class="enemy-card terminid">
+            <div class="enemy-header">
+                <img src="TerminidLogo.png" alt="Terminid Logo" class="enemy-logo">
+                <div>
+                    <div class="enemy-faction csTerminids">TERMINIDS</div>
+                    <div class="enemy-threat">THREAT LEVEL: EXTREME</div>
+                </div>
+            </div>
+            <p class="enemy-desc">A race of insectoid creatures which have won the evolution game. Their swarms are relentless, their biology terrifying. No mercy will be given — none should be expected.</p>
+            <a href="" class="enemy-link csTerminids">VIEW INTEL →</a>
+        </div>
 
-    <button onclick="window.location.href='steam://run/553850';">
-        Play HELLDIVERS 2
-    </button>
+        <div class="enemy-card automaton">
+            <div class="enemy-header">
+                <img src="AutomatonLogo.png" alt="Automaton Logo" class="enemy-logo">
+                <div>
+                    <div class="enemy-faction csAutomatons">AUTOMATONS</div>
+                    <div class="enemy-threat">THREAT LEVEL: CRITICAL</div>
+                </div>
+            </div>
+            <p class="enemy-desc">Based in Cyberstan, the Automatons use cyborg technology to spread terror across the galaxy. Cold, calculated, and without conscience. They will not stop.</p>
+            <a href="automaton.html" class="enemy-link csAutomatons">VIEW INTEL →</a>
+        </div>
 
-    <h1>ENLIST NOW ! *</h1>
-    <form>
-        <p>
-            <label for="nom">Identité:</label>
-            <input type="text" name="nom" />
+        <div class="enemy-card illuminate">
+            <div class="enemy-header">
+                <img src="IlluminateLogo.png" alt="Illuminate Logo" class="enemy-logo">
+                <div>
+                    <div class="enemy-faction csIlluminates">ILLUMINATES</div>
+                    <div class="enemy-threat">THREAT LEVEL: UNKNOWN</div>
+                </div>
+            </div>
+            <p class="enemy-desc">A mysterious cult with one ideology: total mind control of every human in the galaxy. Their methods are unknown. Their reach, boundless. Stay vigilant, Helldiver.</p>
+            <a href="" class="enemy-link csIlluminates">VIEW INTEL →</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="media-section">
+    <div class="section-label">PROPAGANDA OFFICE</div>
+    <h2 class="section-title">OFFICIAL TRANSMISSIONS</h2>
+    <div class="media-grid">
+        <div class="media-card">
+            <div class="media-badge">CINEMATIC</div>
+            <p class="media-desc">Watch the official cinematic introduction — everything you need to know about our mission.</p>
+            <a href="https://youtu.be/S9STizATKjE?si=-yD0uu6U7fRKL9Zy" class="video-link" target="_blank">▶ WATCH NOW</a>
+        </div>
+        <div class="media-card">
+            <div class="media-badge csAutomatons">BREAKING NEWS</div>
+            <p class="media-desc"><span class="csAutomatons">AUTOMATONS</span> are a real and present threat to every democratic citizen of Super Earth.</p>
+            <a href="https://youtu.be/3_ZVYxDgbM0?si=q-QC3CoHxgBFORjQ" class="video-link" target="_blank">▶ WATCH NOW</a>
+        </div>
+    </div>
+</section>
+
+<section class="map-section">
+    <div class="section-label">LIVE WAR MAP</div>
+    <h2 class="section-title">GALACTIC STATUS</h2>
+    <div class="map-wrapper">
+        <iframe src="https://hd2galaxy.com/" title="HD2Galaxy" loading="lazy"></iframe>
+    </div>
+</section>
+
+<section class="enlist-section" id="enlist">
+    <div class="enlist-inner">
+        <div class="section-label">RECRUITMENT OFFICE</div>
+        <h2 class="section-title">ENLIST NOW</h2>
+        <p class="enlist-lead">Super Earth needs YOU. Fill in your details and join the fight for managed democracy.</p>
+
+        <form class="enlist-form" id="enlistForm">
+            <div class="form-row">
+                <label for="nom">HELLDIVER IDENTITY</label>
+                <input type="text" id="nom" name="nom" placeholder="Enter your name, soldier">
+            </div>
+            <div class="form-row">
+                <label for="cause">REASON TO FIGHT</label>
+                <input type="text" id="cause" name="cause" placeholder="For democracy? For glory?">
+            </div>
+            <button type="submit" class="btn-war">SUBMIT ENLISTMENT</button>
+        </form>
+
+        <div class="enlist-confirm" id="enlistConfirm"></div>
+
+        <a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/" class="steam-link" target="_blank">
+            OR CLICK HERE TO BECOME A HELLDIVER ON STEAM
+        </a>
+
+        <p class="conditions">
+            * BECOMING A HELLDIVER MAY RESULT IN DEATH.<br>
+            * SURVIVAL IS NOT GUARANTEED.<br>
+            * SUPER EARTH IS NOT LIABLE FOR LOSS OF LIMB, SANITY, OR DEMOCRACY.
         </p>
-        <p>
-            <label for="cause">Votre raison de combattre:</label>
-            <input type="text" name="cause" />
-        </p>
-        <p>
-            <button type="submit">OK</button>
-        </p>
-    </form>
-    <a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/" class="enlist-link">CLICK HERE TO BECOME A HELLDIVER !</a>
-    <p class="conditions">* BECOMING A HELLDIVER MAY RESULT TO DEATH.<br>* SURVIVING IS NOT GUARANTEED.</p>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <img src="Helldivers2Logo.png" alt="HD2" class="footer-logo">
+    <p>HELLDIVERS 2 © ARROWHEAD GAME STUDIOS &amp; SONY INTERACTIVE ENTERTAINMENT</p>
+    <p class="footer-sub">FOR SUPER EARTH. FOR DEMOCRACY. FOR MANAGED FREEDOM.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
-
 </html>

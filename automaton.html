@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automaton War</title>
+    <title>Automaton War — HELLDIVERS 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="automaton.css">
 </head>
-
 <body>
-    <header>
-        <img src="AutomatonLogo.png" alt="ALogo" class="logo">
-    </header>
 
-    <hr>
+<div class="scanlines"></div>
+<div class="grain"></div>
 
-    <h1 class="csAutomatons">-- THE AUTOMATON WAR --</h1>
+<nav class="topbar">
+    <div class="topbar-inner">
+        <img src="Helldivers2Logo.png" alt="HD2 Logo" class="topbar-logo">
+        <ul class="topbar-links">
+            <li><a href="index.html">WAR CAMPAIGN</a></li>
+            <li><a href="automaton.html" class="active csAutomatons">AUTOMATONS</a></li>
+            <li><a href="index.html#enlist">ENLIST</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <img src="AutomatonLogo.png" alt="ALogo" class="large-logo" />
+<section class="auto-hero">
+    <div class="auto-hero-inner">
+        <img src="AutomatonLogo.png" alt="Automaton Logo" class="auto-hero-logo">
+        <p class="auto-hero-label">THREAT DOSSIER — CLASSIFIED</p>
+        <h1 class="auto-hero-title csAutomatons">THE AUTOMATON WAR</h1>
+        <p class="auto-hero-sub">Know your enemy. Destroy your enemy. There is no third option.</p>
+    </div>
+</section>
 
-    <table class="wikitable sortable jquery-tablesorter" style="text-align:center; max-width:700px; width:100%">
+<section class="enemies-section">
+    <div class="section-label">KNOWN UNITS</div>
+    <h2 class="section-title csAutomatons">ENEMY ROSTER</h2>
+    <div class="units-grid" id="unitsGrid"></div>
+</section>
 
-        <tbody>
-            <tr>
-                <td><img alt="Factory Strider Enemy Icon.png" src="Factory_Strider_Enemy_Icon.png" decoding="async" loading="lazy" width="123" height="113" data-file-width="2079" data-file-height="1905"></td>
-                <td>
-                    Factory Strider
-                </td>
-                <td>
-                    Massive Automaton quad-walker, armed with twin fusion gatling guns and a large burst-cannon. Capable of creating and deploying squads of Devastators.
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<div class="back-bar">
+    <a href="index.html" class="back-link">← RETURN TO GALACTIC WAR CAMPAIGN</a>
+</div>
 
-    <br>
+<footer class="site-footer">
+    <img src="Helldivers2Logo.png" alt="HD2" class="footer-logo">
+    <p>HELLDIVERS 2 © ARROWHEAD GAME STUDIOS &amp; SONY INTERACTIVE ENTERTAINMENT</p>
+</footer>
 
-    <a href="index.html" class="color-specific">BACK TO THE GALACTIC WAR CAMPAIGN</a>
-
-    <br>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="automaton.js"></script>
 </body>
+</html>
